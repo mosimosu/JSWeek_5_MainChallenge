@@ -230,6 +230,14 @@ body {
   padding-bottom: 100px;
 }
 
+.main-content > div:nth-child(1) {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 2cap 0;
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+}
+
 @media (max-width: 576px) {
   .main-content {
     padding-bottom: 30px;
@@ -242,10 +250,16 @@ body {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  /* align-items: center; */
+  align-items: flex-start;
   max-width: 920px;
+  /* margin: 0 auto; */
+  margin-left: 110px;
+  /* padding: 50px 0; */
+}
+
+#chart {
   margin: 0 auto;
-  padding: 50px 0;
 }
 
 .search-area p {
@@ -265,7 +279,8 @@ body {
 }
 
 .regionSearch {
-  width: 27.5%;
+  /* width: 27.5%; */
+  width: 40%;
   min-height: 38px;
   text-indent: 0.5rem;
   color: #818a91;
